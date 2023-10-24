@@ -35,6 +35,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -129,7 +130,20 @@ body {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  
 }
+
+.background {
+max-width: 1440px;
+  background-image: linear-gradient(
+rgba(46, 47, 66, 0.70),
+     rgba(46, 47, 66, 0.70)
+      ),
+       url('/images/peopleoffice.jpg');
+  margin: 0 auto;
+}
+
+
 .hero-title {
   max-width: 496px;
   color: white;
