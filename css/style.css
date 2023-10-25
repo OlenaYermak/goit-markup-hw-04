@@ -130,18 +130,14 @@ body {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
-  
+  width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+      url('/images/peopleoffice.jpg');
+    margin: 0 auto;
 }
 
-.background {
-max-width: 1440px;
-  background-image: linear-gradient(
-rgba(46, 47, 66, 0.70),
-     rgba(46, 47, 66, 0.70)
-      ),
-       url('/images/peopleoffice.jpg');
-  margin: 0 auto;
-}
+
 
 
 .hero-title {
@@ -223,6 +219,18 @@ rgba(46, 47, 66, 0.70),
 .benefits-list-item:last-child {
   margin-right: 0;
 }
+.benefits-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ width: 264px;
+  height: 112px;
+  border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;  
+    margin-bottom: 8px;
+}
+
 /* ======TEAM====== */
 .team {
   background-color: #f4f4fd;
@@ -256,6 +264,12 @@ rgba(46, 47, 66, 0.70),
 }
 .team-list-text {
   text-align: center;
+}
+.social-team-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  
 }
 
 /* ======PORTFOLIO====== */
@@ -304,4 +318,36 @@ rgba(46, 47, 66, 0.70),
 .footer-logotype {
   display: inline-block;
   margin-bottom: 16px;
+}
+.social-footer-list
+{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.social-list-link,
+.social-team-list-link {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+border-radius: 50px;
+background-color: #4D5AE5;
+}
+.social-footer {
+  display: flex;
+  flex-direction: column;
+}
+.social-list-icon {
+  fill: white;
+}
+.social-footer-title {
+  font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+letter-spacing: 0.02em;
+color: #ffffff;
+margin-bottom: 16px;
 }
