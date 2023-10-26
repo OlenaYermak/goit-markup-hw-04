@@ -105,6 +105,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -116,6 +117,7 @@ body {
 
   line-height: 1.5;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-contakt-link:hover,
@@ -124,6 +126,19 @@ body {
 }
 .contact {
   font-style: normal;
+}
+.studio-after {
+  position: relative;
+}
+.studio-after::after {
+content: "";
+left: 0;
+bottom: -1px;
+position: absolute;
+width: 48px;
+height: 4px;
+border-radius: 2px;
+background: #404BBF;
 }
 /* ======HERO====== */
 .hero {
@@ -168,6 +183,7 @@ body {
   min-width: 169px;
   height: 56px;
   border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -271,6 +287,13 @@ body {
   gap: 24px;
   
 }
+.social-team-list-link:hover,
+.social-team-list-link:focus {
+  background-color: #404BBF;
+}
+.social-team-list-icon {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* ======PORTFOLIO====== */
 .portfolio-list {
@@ -281,6 +304,7 @@ body {
 }
 .portfolio-list-item {
   width: calc((100% - 3 * 24px) / 3);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card {
@@ -298,6 +322,37 @@ body {
 .portfolio-list:nth-child(-n + 6) {
   margin-bottom: 0;
 }
+.overlay-text {
+  position: absolute;
+  width: 360px;
+  top: 0;
+  left: 0;
+  background-color: #4D5AE5;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px 164px 32px;
+  color: #F4F4FD;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-card:hover .overlay-text {
+transform: translateY(0%);
+}
+.portfolio-list-item:hover {
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+
+
+
 
 /* ======FOOTER====== */
 .page-footer {
@@ -313,6 +368,9 @@ body {
 .page-footer {
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
 }
 
 .footer-logotype {
@@ -338,9 +396,13 @@ background-color: #4D5AE5;
 .social-footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+margin-left: 120px;
 }
-.social-list-icon {
-  fill: white;
+.social-footer-list-icon,
+.social-team-list-icon {
+  fill: #F4F4FD;
 }
 .social-footer-title {
   font-family: Roboto;
@@ -350,4 +412,17 @@ background-color: #4D5AE5;
 letter-spacing: 0.02em;
 color: #ffffff;
 margin-bottom: 16px;
+display: flex;
+margin-bottom: 16px;
+}
+.footer-container {
+display: flex;
+align-items: baseline;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #31D0AA;
+}
+.social-footer-list-icon {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
