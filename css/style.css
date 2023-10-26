@@ -71,6 +71,9 @@ body {
 .header-container {
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -129,6 +132,7 @@ body {
 }
 .studio-after {
   position: relative;
+  color: #404bbf;
 }
 .studio-after::after {
 content: "";
@@ -145,11 +149,14 @@ background: #404BBF;
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
-  width: 1440px;
+  max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)),
       url('/images/peopleoffice.jpg');
     margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -292,7 +299,7 @@ background: #404BBF;
   background-color: #404BBF;
 }
 .social-team-list-icon {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ======PORTFOLIO====== */
@@ -304,7 +311,7 @@ background: #404BBF;
 }
 .portfolio-list-item {
   width: calc((100% - 3 * 24px) / 3);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card {
@@ -341,7 +348,7 @@ background: #404BBF;
   position: relative;
   overflow: hidden;
 }
-.overlay-card:hover .overlay-text {
+.portfolio-list-item:hover .overlay-text {
 transform: translateY(0%);
 }
 .portfolio-list-item:hover {
@@ -390,7 +397,7 @@ justify-content: center;
 align-items: center;
 width: 40px;
 height: 40px;
-border-radius: 50px;
+border-radius: 50%;
 background-color: #4D5AE5;
 }
 .social-footer {
@@ -398,13 +405,13 @@ background-color: #4D5AE5;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-margin-left: 120px;
+
 }
 .social-footer-list-icon,
 .social-team-list-icon {
   fill: #F4F4FD;
 }
-.social-footer-title {
+.social-footer-text {
   font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -414,15 +421,20 @@ color: #ffffff;
 margin-bottom: 16px;
 display: flex;
 margin-bottom: 16px;
+
 }
 .footer-container {
 display: flex;
 align-items: baseline;
+
 }
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: #31D0AA;
 }
 .social-footer-list-icon {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-text-footer-wrap {
+  margin-right: 120px;
 }
